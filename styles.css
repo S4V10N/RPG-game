@@ -12,6 +12,7 @@ body {
   display: grid;
   place-content: center;
   font-size: 1.8rem;
+  padding: 0 2rem;
 }
 
 #text {
@@ -25,10 +26,21 @@ body {
   max-height: 40rem;
   background-color: #ffffff;
   color: #ffffff;
-  transform: 0.5 ease-in-out;
+  min-width: 36rem;
   padding: 10px;
 }
-
+#stats {
+  background-color: grey;
+}
+#goldText {
+  color: yellow;
+}
+#healthText {
+  color: lawngreen;
+}
+#xpText {
+  color: white;
+}
 #controls,
 #stats {
   border: 1px solid #0a0a23;
@@ -37,6 +49,12 @@ body {
   font-size: 2rem;
 }
 
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
 #monsterStats {
   display: none;
   border: 1px solid #0a0a23;
@@ -51,7 +69,10 @@ body {
 
 button {
   cursor: pointer;
+  width: 100%;
+  min-height: 4.6rem;
   color: #0a0a23;
+  font-size: 1.6rem;
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
